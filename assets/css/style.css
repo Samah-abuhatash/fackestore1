@@ -1,0 +1,269 @@
+/* style.css */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  .countainers {
+    width: calc(100% - 120px);
+    margin: auto;
+  }
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+  body {
+    background-color:antiquewhite; /* لون خلفية أغمق وجميل */
+    font-family: Arial, sans-serif;
+    color: #333;
+    overflow-y: auto !important; /* تفعيل السكرول في الصفحة */
+  }
+  .loader {
+    width: 48px;
+    height: 48px;
+    border: 5px solid #fff;
+    border-bottom-color: transparent;
+    border-radius: 50%;
+    display: inline-block;
+    box-sizing: border-box;
+    animation: rotation 1s linear infinite;
+  }
+  @keyframes rotation {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  .loading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    position: fixed;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+  .d-none {
+    display: none;
+  }
+  .my_moadel {
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+  }
+  .my_moadel .imges {
+    background-color: #fff;
+    width: 600px;
+    padding: 50px 100px;
+    border-radius: 20px;
+    position: relative;
+  }
+  .l-button, .r-button, .x-button {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    color: #fff;
+    border-radius: 20px;
+  }
+  .l-button {
+    top: 50%;
+    left: 10px;
+  }
+  .r-button {
+    top: 50%;
+    right: 10px;
+  }
+  .x-button {
+    top: 10px;
+    right: 10px;
+  }
+  .d-none1 {
+    display: none;
+  }
+  .pagnation {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+    list-style: none;
+  }
+  .pagnation a {
+    text-decoration: none;
+  }
+  .category {
+    margin-top: 20px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: all 0.3s;
+    width: 250px;
+  }
+  .category:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+  }
+  .category h2 {
+    margin-bottom: 10px;
+  }
+  .category a {
+    display: block;
+    margin-top: 10px;
+    text-decoration: none;
+    color: #ff0000; /* لون الروابط - أحمر */
+    font-weight: bold;
+    padding: 10px 15px;
+    border: 1px solid #ff0000;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  .category a:hover {
+    background-color: #ff0000;
+    color: #fff;
+  }
+  .imges11 {
+    width: 100px;
+    height: 100px;
+  }
+  .imges11 img {
+    width: 100%;
+  }
+  header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 10px;
+  }
+  .logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-top: 10px;
+  }
+  .category1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+  }
+  .proudct .category {
+    width:30%;
+    text-align: center;
+    background-color: aliceblue;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+
+  }
+  .proudct .row{
+    gap: 20px;
+
+  }
+  .category1 a {
+ 
+    color: #4B4B4B
+    ; /* لون الروابط - أحمر */
+    text-decoration: none;
+        }
+        .proudcts .proudct {
+          width:30%;
+          text-align: center;
+          background-color: aliceblue;
+        }
+        .proudcts .row{
+          gap: 20px;
+  
+        } 
+
+        .imgproudct{
+         width: 100px;
+         height: 100px;
+        }
+        .imgproudct img{
+          width: 100%;
+        }
+        .img-girl{
+          padding: 30px 0;
+          background-color: rgb(121, 86, 57);
+          margin-top: 10px;
+
+        }
+        .text{
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          gap:10px;
+          color: antiquewhite;
+        }
+        .proudct12 {
+          border: 1px solid #ddd;
+          border-radius: 8px;
+          padding: 16px;
+          text-align: center;
+          box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+          transition: all 0.3s ease;
+          background-color: #fff;
+        }
+        
+        .proudct12:hover {
+          box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+          transform: translateY(-5px);
+        }
+        
+        .proudct12 h2 {
+          font-size: 1.2rem;
+          margin-bottom: 8px;
+          color: #333;
+        }
+        
+        .proudct12 div {
+          max-width: 100%;
+          overflow: hidden;
+          border-radius: 8px;
+        }
+        
+        .proudct12 img {
+          max-width: 100%;      /* يضمن عدم تجاوز الصورة لحجم الـ div */
+          height: auto;         /* يحافظ على نسبة الأبعاد */
+          max-height: 200px;    /* يحدد ارتفاعًا أقصى */
+          object-fit: contain;  /* يعرض الصورة بالكامل بدون قص */
+          border-radius: 8px;   /* زوايا دائرية لنعومة التصميم */
+        }
+        
+        
+        .proudct12 p {
+          font-size: 1rem;
+          color: #666;
+          margin: 10px 0;
+        }
+        
+        .proudct12 a {
+          display: inline-block;
+          padding: 8px 16px;
+          color: #fff;
+          background-color: #007BFF;
+          text-decoration: none;
+          border-radius: 4px;
+          transition: background-color 0.3s;
+        }
+        
+        .proudct12 a:hover {
+          background-color: #0056b3;
+        }
+        
